@@ -1,4 +1,5 @@
 #Ignore Liberty server files
 **
-!target/liberty/wlp/usr/servers/defaultServer/**
+!target/*.war
+!src/main/liberty/config/**
 

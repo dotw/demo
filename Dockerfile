@@ -1,2 +1,3 @@
 FROM websphere-liberty:microProfile
-COPY /target/liberty/wlp/usr/servers/defaultServer /config/
+COPY src/main/liberty/config /config/
+COPY target/demo-1.0-SNAPSHOT.war /config/dropins/

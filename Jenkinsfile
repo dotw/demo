@@ -4,5 +4,5 @@
 microserviceBuilderPipeline {
   image = 'demo'
   test = 'false'
-  mvnCommands = 'package'
+  mvnCommands = '-Dmaven.test.skip=true package'
 }

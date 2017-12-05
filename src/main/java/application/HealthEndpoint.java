@@ -12,7 +12,7 @@ public class HealthEndpoint implements HealthCheck {
 
     @Override
     public HealthCheckResponse call() {
-      return HealthCheckResponse.named("demo").up().build();
+      return HealthCheckResponse.named("demo").withData("key", "value").up().build();
     }
 
 }

@@ -5,6 +5,8 @@
 /.classpath
 /.project
 /.settings
+/.ibm-project
+/.vscode
 
 /caches
 /local.properties

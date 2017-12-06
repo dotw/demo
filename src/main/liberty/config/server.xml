@@ -1,14 +1,17 @@
 <server description="demo server">
 
-  <featureManager>
-    <feature>microprofile-1.2</feature>
-    <feature>jndi-1.0</feature>
-	<feature>usr:opentracingZipkin-0.30</feature>
-  </featureManager>
+    <featureManager>
+        <feature>microprofile-1.2</feature>
+        <feature>jndi-1.0</feature>
+        <feature>usr:opentracingZipkin-0.30</feature>
+    </featureManager>
 
-  <httpEndpoint httpPort="9080" httpsPort="9443"
-      id="defaultHttpEndpoint" host="*" />
+    <httpEndpoint httpPort="9080" httpsPort="9443"
+       id="defaultHttpEndpoint" host="*" />
 
     <opentracingZipkin />
+
+    <quickStartSecurity userName="admin" userPassword="admin" />
+    <keyStore id="defaultKeyStore" password="asdfasdf" />
 
 </server>

@@ -15,7 +15,7 @@ public class Example {
     @Produces(MediaType.TEXT_PLAIN)
     public Response example() {
         Client client = ClientBuilder.newClient();
-        Response response = client.target("http://demo-backend:9080/v1/example").request().get();
+        Response response = client.target("http://demo-backend-service:9080/v1/example").request().get();
         String message = response.readEntity(String.class);
         client.close();
         return Response.ok("Received: " + message).build();

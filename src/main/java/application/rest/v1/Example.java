@@ -16,7 +16,7 @@ public class Example {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public Response example() {
-        return Response.ok("Received: " + caller.call()).build();
+        return Response.ok("Received: \"" + caller.call() + "\"").build();
     }
 
 }

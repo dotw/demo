@@ -12,7 +12,7 @@ public class BackendCaller {
     @Fallback(fallbackMethod="fallback")
     public String call() {
         Client client = ClientBuilder.newClient();
-        Response response = client.target("http://demo-backend-service:9080/v1/example").request().get();
+        Response response = client.target("http://demo:9080/v1/example").request().get();
         String message = response.readEntity(String.class);
         client.close();
         return message;
